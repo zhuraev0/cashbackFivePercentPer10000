@@ -8,7 +8,7 @@ func sale(sales[]int) int{
 	const purchaseLimit = 10_000
 	const percentOfCashback = 5
 	for _, value := range sales {
-		if value >= purchaseLimit {
+		if value > purchaseLimit {
 			value = value*percentOfCashback/100
 			sum += value
 		}
