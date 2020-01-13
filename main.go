@@ -1,7 +1,8 @@
 package main
 
-func main() {
-}
+import "fmt"
+
+
 func sale(sales[]int) int{
 	sum := 0
 	const purchaseLimit = 10_000
@@ -12,7 +13,11 @@ func sale(sales[]int) int{
 			sum += value
 		}
 	}
-	return 0
+	return sum
 }
+func main() {
+	sales := []int{12_000, 8_000, 15_000, 8_000}
+		fmt.Println(sale(sales))
+	}
 
 
